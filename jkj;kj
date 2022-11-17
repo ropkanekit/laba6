@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+#define _USE_MATH_DEFINES 
+#include <math.h> 
+using namespace std;
+
+int main()
+{
+    float start, end, step, Y;
+    start = 2;
+    end = 3;
+    step = 0.1;
+    cout << setw(5) << "Start: " << start <<setw(10)<< "End: " << end << setw(15) << "Step: " << step << endl;
+    while(start <= end)
+    {
+        Y = pow(cos(start), 2) + log10(start) + 2;
+        cout << "Result(x, Y) : " << start << setw(10) << Y << endl;
+        start+=step;
+        
+    }
+}
